@@ -152,7 +152,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* For status indicator positioning */
 }
 
 .project-card:hover {
@@ -198,12 +197,14 @@ nav a:hover {
 .card-content p {
     color: #aaa;
     font-size: 0.95rem;
+    line-height: 1.7;
     flex-grow: 1;
     transition: color 0.5s ease;
+    margin-bottom: 1rem;
 }
 
 .card-link {
-    margin-top: 1.5rem;
+    margin-top: auto;
     display: inline-block;
     color: #6C63FF;
     text-decoration: none;
@@ -211,10 +212,14 @@ nav a:hover {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
+    padding: 8px 15px;
+    border: 1px solid #6C63FF;
+    border-radius: 20px;
 }
 
 .card-link:hover {
-    color: #8a84ff;
+    color: #ffffff;
+    background: #6C63FF;
 }
 
 .card-link i {
@@ -238,33 +243,6 @@ nav a:hover {
     opacity: 0.7;
     cursor: not-allowed;
     pointer-events: none;
-}
-
-/* Status indicator */
-.status-indicator {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-/* Status colors */
-.status-finish {
-    background: #4CAF50;
-    /* Green */
-}
-
-.status-ongoing {
-    background: #2196F3;
-    /* Blue */
-}
-
-.status-abandon {
-    background: #9E9E9E;
-    /* Gray - visible in both modes */
 }
 
 footer {
@@ -327,25 +305,21 @@ body.light-mode .social-links a {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+    .projects-grid {
+        padding: 2rem 8%;
     }
-
+    
+    .hero {
+        padding: 4rem 5% 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
     .hero p {
         font-size: 1rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .name-container {
-        min-width: 130px;
-        /* Adjust for mobile */
+        padding: 0 5%;
     }
 }
 
@@ -452,7 +426,6 @@ body.light-mode .home-button:hover {
     opacity: 1;
 }
 
-.image-link:hover + .card-content .card-link,
-.image-link:hover ~ .status-indicator {
+.image-link:hover + .card-content .card-link{
     transform: translateY(0);
 }
