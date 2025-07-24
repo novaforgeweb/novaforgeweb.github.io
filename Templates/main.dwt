@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="theme-light"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="zh-TW" class="theme-light">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- InstanceBeginEditable name="doctitle" -->
+        <!-- TemplateBeginEditable name="doctitle" -->
         <title>NovaForge | 創意數位解決方案</title>
-		<!-- InstanceEndEditable -->
+		<!-- TemplateEndEditable -->
         <link rel="shortcut icon" href="material/book.png" type="image/x-icon">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -78,20 +78,11 @@
             </nav>
     </header>
 
-<!-- InstanceBeginEditable name="body" -->
+<!-- TemplateBeginEditable name="body" -->
 		
-		<div class="error-container">
-            <div class="error-code">404</div>
-            <h2 class="error-message">找不到頁面</h2>
-            <p class="error-description">
-                您正在尋找的頁面已遺失。它可能正在建設中或不存在。
-            </p>
-            <a href="index.html" class="home-button">
-                <i class="fas fa-home"></i> 返回首頁
-            </a>
-        </div>
-	
-<!-- InstanceEndEditable -->
+		
+		
+<!-- TemplateEndEditable -->
         <footer>
             <div class="social-links">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -116,4 +107,4 @@
         <!-- JavaScript -->
         <script src="js/common.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>

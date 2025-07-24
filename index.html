@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="theme-light">
-    <head>
+<html lang="zh-TW" class="theme-light"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- InstanceBeginEditable name="doctitle" -->
         <title>NovaForge | 創意數位解決方案</title>
+		<!-- InstanceEndEditable -->
         <link rel="shortcut icon" href="material/book.png" type="image/x-icon">
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
         <!-- Critical Theme CSS -->
         <style>
@@ -19,6 +21,8 @@
             --footer-bg: #0a0a0a;
             --logo-color: #f0f0f0;
             --logo-accent: #6C63FF;
+            --footer-logo-filter-dark: brightness(0) saturate(0%) invert(75%) sepia(6%) saturate(0%) hue-rotate(173deg) brightness(90%) contrast(91%);
+            --footer-logo-filter-light: brightness(0) saturate(0%) invert(45%) sepia(0%) saturate(40%) hue-rotate(153deg) brightness(86%) contrast(89%);
         }
 
         .theme-light {
@@ -35,6 +39,18 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        .footer-logo img {
+            transition: filter 0.5s ease;
+        }
+
+        .theme-dark .footer-logo img {
+            filter: var(--footer-logo-filter-dark);
+        }
+        
+        .theme-light .footer-logo img {
+            filter: var(--footer-logo-filter-light);
         }
     </style>
 
@@ -60,8 +76,9 @@
                 <a href="404.html">關於我們</a>
                 <a href="404.html">聯絡我們</a>
             </nav>
-        </header>
+    </header>
 
+<!-- InstanceBeginEditable name="body" -->
         <section class="hero">
             <h1>打造您的數位未來</h1>
             <p>專業網頁設計與數位行銷解決方案，助您品牌脫穎而出</p>
@@ -115,11 +132,17 @@
 
             <br>
         </section>
-
+<!-- InstanceEndEditable -->
         <footer>
             <div class="social-links">
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#" class="footer-logo"
+                    style="display: inline-grid; place-items: center;">
+                    <img
+                        src="https://freehunter.hk/_next/image?url=%2Fassets%2Futilities%2Fbluegray_horizontal_line.svg&w=256&q=75"
+                        height="20" style="margin-bottom: 3px;">
+                </a>
             </div>
             <p class="copyright">© 2025 NovaForge. 保留所有權利。</p>
         </footer>
@@ -133,5 +156,5 @@
 
         <!-- JavaScript -->
         <script src="js/common.js"></script>
-    </body>
-</html>
+</body>
+<!-- InstanceEnd --></html>
