@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html
-    lang="en">
+<html lang="zh-TW" class="theme-light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NovaForge | Home</title>
+        <title>NovaForge | 404 Not Found</title>
         <link rel="shortcut icon" href="material/book.png" type="image/x-icon">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
+
+        <!-- Critical Theme CSS -->
+        <style>
+        :root {
+            /* Dark mode defaults */
+            --bg-primary: #121212;
+            --text-primary: #f0f0f0;
+            --text-secondary: #aaa;
+            --card-bg: #1e1e1e;
+            --footer-bg: #0a0a0a;
+            --logo-color: #f0f0f0;
+            --logo-accent: #6C63FF;
+        }
+
+        .theme-light {
+            /* Light mode overrides */
+            --bg-primary: #f8f9fa;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --card-bg: #ffffff;
+            --footer-bg: #e8e8e8;
+            --logo-color: #333;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+    </style>
+
+        <!-- Theme Initialization Script -->
+        <script>
+        // Get saved theme or default to light
+        const savedTheme = localStorage.getItem('theme');
+        const defaultTheme = 'light'; // Set default to light
+        const initialTheme = savedTheme || defaultTheme;
+        
+        // Update html class immediately
+        document.documentElement.className = `theme-${initialTheme}`;
+    </script>
     </head>
     <body>
         <header>
@@ -17,36 +56,39 @@
                 <span>Forge</span>
             </div>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="404.html">About</a>
-                <a href="404.html">Contact</a>
+                <a href="index.html">首頁</a>
+                <a href="404.html">關於我們</a>
+                <a href="404.html">聯絡我們</a>
             </nav>
         </header>
 
         <div class="error-container">
             <div class="error-code">404</div>
-            <h2 class="error-message">Page Not Found</h2>
+            <h2 class="error-message">找不到頁面</h2>
             <p class="error-description">
-                The page you're looking for is missing. It might be under construction or doesn't exist.
+                您正在尋找的頁面已遺失。它可能正在建設中或不存在。
             </p>
             <a href="index.html" class="home-button">
-                <i class="fas fa-home"></i> Back to Home
+                <i class="fas fa-home"></i> 返回首頁
             </a>
         </div>
 
         <footer>
             <div class="social-links">
                 <a href><i class="fab fa-instagram"></i></a>
-                <a href><i class="fab fa-twitter"></i></a>
                 <a href><i class="fab fa-github"></i></a>
             </div>
-            <p class="copyright">© 2025 NovaForge. All rights reserved.</p>
+            <p class="copyright">© 2025 NovaForge. 保留所有權利。</p>
         </footer>
 
         <div class="theme-toggle">
             <i class="fas fa-moon"></i>
         </div>
 
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- JavaScript -->
         <script src="js/common.js"></script>
     </body>
 </html>
