@@ -6,7 +6,7 @@
         <!-- TemplateBeginEditable name="doctitle" -->
         <title>NovaForge | 創意數位解決方案</title>
 		<!-- TemplateEndEditable -->
-        <link rel="shortcut icon" href="material/book.png" type="image/x-icon">
+        <link rel="shortcut icon" href="material/novaforge_icon_dark.svg" type="image/x-icon">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -71,11 +71,11 @@
     <body>
         <header>
             <div class="logo">
-                <span class="first">Nova</span>
-                <span>Forge</span>
+                <a href="index.html" class="img-link"><img src="material/novaforge_banner.svg" height="64px"></a>
             </div>
             <nav>
                 <a href="index.html">首頁</a>
+                <a href="404.html">專欄網誌</a>
                 <a href="404.html">價格方案</a>
                 <a href="404.html">關於我們</a>
                 <a href="404.html">聯絡我們</a>

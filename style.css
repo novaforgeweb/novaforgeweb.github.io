@@ -90,19 +90,14 @@ header {
     align-items: center;
 }
 
-.logo span.first {
-    color: var(--logo-accent);
-}
-
-.logo span {
-    color: var(--logo-color);
-    transition: color 0.5s ease;
+.logo a.img-link {
+	line-height: 0;
 }
 
 nav a {
     color: var(--nav-link-color);
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 1.75rem;
     font-size: 0.95rem;
     letter-spacing: 1px;
     transition: color 0.3s ease;
