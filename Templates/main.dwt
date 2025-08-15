@@ -5,6 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- TemplateBeginEditable name="doctitle" -->
         <title>NovaForge | 創意數位解決方案</title>
+        <meta name="description" content="NovaForge 致力由零開始為您打造專屬於您的網站，展現您品牌的獨特之處，在數位時代脱穎而出。">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://https://novaforgeweb.github.io">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="NovaForge | 創意數位解決方案">
+        <meta property="og:description" content="NovaForge 致力由零開始為您打造專屬於您的網站，展現您品牌的獨特之處，在數位時代脱穎而出。">
+        <meta property="og:image" content="https://novaforgeweb.github.io/material/novaforge_banner.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta property="twitter:domain" content="https://novaforgeweb.github.io">
+        <meta property="twitter:url" content="https://https://novaforgeweb.github.io">
+        <meta name="twitter:title" content="NovaForge | 創意數位解決方案">
+        <meta name="twitter:description" content="NovaForge 致力由零開始為您打造專屬於您的網站，展現您品牌的獨特之處，在數位時代脱穎而出。">
+        <meta name="twitter:image" content="https://novaforgeweb.github.io/material/novaforge_banner.png">
 		<!-- TemplateEndEditable -->
         <link rel="shortcut icon" href="material/novaforge_icon_dark.svg" type="image/x-icon">
         <link rel="stylesheet"
